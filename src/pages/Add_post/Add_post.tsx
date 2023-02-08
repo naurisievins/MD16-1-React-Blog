@@ -34,8 +34,6 @@ function Add_post() {
     navigate('/blog', { replace: true });
   }
 
-
-
   return (
     <form className={styles.addForm}
           onSubmit={(e) => {

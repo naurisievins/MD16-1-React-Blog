@@ -10,7 +10,6 @@ import AddComment from '../../components/AddComment/AddComment';
 import dateFormat from '../../components/Time';
 import Comments from '../../components/Comments/Comments';
 import { useMutation, useQueryClient, useQuery } from '@tanstack/react-query';
-import { useNavigate } from "react-router-dom";
 
 function Post() {
 
@@ -25,7 +24,6 @@ function Post() {
   const url = `http://localhost:3004/posts/${id}`;
   const [showEdit, setShowEdit] = useState(false);
   const [formValues, setFormValues] = useState(initFormValues);
-  const navigate = useNavigate();
 
   const { isLoading : postDataLoading, isError: postDataError, data: postData } = useQuery({
     queryKey: ["postData"],

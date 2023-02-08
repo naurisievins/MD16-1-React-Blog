@@ -15,7 +15,6 @@ function Comments(props: { id: string | undefined }) {
     axios.get(url)
     .then(({ data }) => {
       if (data.comments && data.comments.length) {
-        console.log(data.comments);
         return data.comments
       } else {
         return null

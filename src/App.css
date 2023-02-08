@@ -1,5 +1,6 @@
 nav {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
   background-color:rgb(25, 28, 31);
