@@ -39,11 +39,12 @@
 .addForm {
   display: flex;
   flex-direction: column;
-  width: 600px;
-  border: 1px solid;
+  width: 100%;
   padding: 10px;
   border-radius: 7px;
   gap: 10px;
+  margin-bottom: 20px;
+  background-color: #e5dede;
 }
 
 .addForm > label {
@@ -54,7 +55,7 @@
 .addForm > label > textarea {
   height: 150x;
   min-height: 150px;
-  max-width: 578px;
+  max-width: 100%;
 }
 
 .edit_button {
@@ -62,5 +63,4 @@
   padding: 0 50px;
   background-color: rgba(206, 199, 199, 0.267);
   font-weight: 600;
-
 }

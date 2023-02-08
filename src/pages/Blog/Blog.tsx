@@ -23,7 +23,7 @@ function Blog() {
 
     if (isLoading) return <h1>Loading...</h1>;
   
-    if (error) return "An error has occurred!";
+    if (error) return <h1>An error has occurred!</h1>;
 
   return (
     <div className={styles.cardContainer}>

@@ -1,5 +1,3 @@
-import { Comment } from '../types/Comment'
-
 export type Form = {
   id?: number
   title: string

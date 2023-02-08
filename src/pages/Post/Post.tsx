@@ -9,7 +9,6 @@ import { v4 as uuidv4 } from 'uuid';
 import AddComment from '../../components/AddComment/AddComment';
 import dateFormat from '../../components/Time';
 import Comments from '../../components/Comments/Comments';
-import { Comment } from '../../types/Comment';
 import { useMutation, useQueryClient, useQuery } from '@tanstack/react-query';
 import { useNavigate } from "react-router-dom";
 
@@ -47,7 +46,6 @@ function Post() {
     axios.get(url)
     .then(({ data }) => {
       if (data.comments && data.comments.length) {
-        console.log(data.comments);
         return data.comments
       } else {
         return null
