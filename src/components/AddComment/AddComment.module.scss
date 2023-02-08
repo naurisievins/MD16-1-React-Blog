@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+.add_comment_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #bfbfbf;
+  max-width: 600px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
+  border-radius: 8px;
+  max-width: 465px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.col > label {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.button_row {
+  align-self: center;
+}

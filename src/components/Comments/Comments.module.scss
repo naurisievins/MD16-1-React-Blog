@@ -1,0 +1,36 @@
+.comment_container {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.comment {
+  width: 100%;
+  display: flex;
+  background-color: rgba(219, 222, 223, 0.425);
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ico_container {
+  width: 150px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.date {
+  text-align: right;
+}
+
+.author {
+  font-weight: bold;
+}

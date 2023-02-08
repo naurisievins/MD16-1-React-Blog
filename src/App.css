@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color:rgb(25, 28, 31);
+  border-radius: 5px;
+}
+
+nav > a {
+  background-color: rgba(25, 28, 31);
+  color: rgb(167, 164, 164);
+  padding: 10px 60px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+nav > a:hover {
+  background-color: rgb(208, 210, 211);
+  color:rgb(26, 25, 25)
+}
+
+nav a:last-of-type {
+  background-color: green;
+  transition: 0.5s;
+}
+
+nav a:last-of-type:hover {
+  opacity: 0.6;
+}
