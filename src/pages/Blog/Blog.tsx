@@ -27,24 +27,25 @@ function Blog() {
     if (error) return <h1>An error has occurred!</h1>;
 
   return (
-    <div className={styles.cardContainer}>
-      {data.map((post: Form) => (
-        <div className={styles.card} key={post.id}>
-          <img src={post.image} alt={post.title} />
-            <div className={styles.text_content}>
-              <span className={styles.title}>{post.title}</span>
-              <span className={styles.content}>
-                {shortContent(post.content)}
-                <span className={styles.comment_count}>
-                  {` ( ${post.commentCount?post.commentCount:0} )`}
+      <div className={styles.cardContainer}>
+        <h2 className={styles.title}>This is blog section</h2>
+        {data.map((post: Form) => (
+          <div className={styles.card} key={post.id}>
+            <img src={post.image} alt={post.title} />
+              <div className={styles.text_content}>
+                <span className={styles.title}>{post.title}</span>
+                <span className={styles.content}>
+                  {shortContent(post.content)}
+                  <span className={styles.comment_count}>
+                    {` ( ${post.commentCount?post.commentCount:0} )`}
+                  </span>
                 </span>
-              </span>
-              <span className={styles.date}>{String(post.date)}</span>
-              <span className={styles.link}><NavLink to={`/blog/${post.id}`}><u>Read more</u></NavLink></span>
-            </div>
-        </div>
-      ))}
-    </div>
+                <span className={styles.date}>{String(post.date)}</span>
+                <span className={styles.link}><NavLink to={`/blog/${post.id}`}><u>Read more</u></NavLink></span>
+              </div>
+          </div>
+        ))}
+      </div>
   )
 }
 

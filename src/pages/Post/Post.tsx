@@ -152,9 +152,9 @@ function Post() {
         {showEdit ? 
           editPost() :
           <div className={styles.card}>
-            <div  className={styles.img_container}>
+            <div className={styles.img_container}>
               <img src={postData?.image}
-                  alt={postData?.title} 
+                   alt={postData?.title} 
               />
             </div>
             <div className={styles.text_content}>

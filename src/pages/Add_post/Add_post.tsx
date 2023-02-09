@@ -41,23 +41,24 @@ function Add_post() {
             handleSubmit(formValues);
           }}
     >
+      <h2 className={styles.title}>Add new post</h2>
       <label>
         Image link:
         <input type='text'
-               required
-               value={formValues.image}
-               placeholder='Imāž...'
-               onChange={(e) => {setFormValues({...formValues, image: e.target.value })} }
+              required
+              value={formValues.image}
+              placeholder='Imāž...'
+              onChange={(e) => {setFormValues({...formValues, image: e.target.value })} }
         />
       </label>
 
       <label>
         Title:
         <input type='text'
-               required
-               value={formValues.title}
-               placeholder='Title...' 
-               onChange={(e) => {setFormValues({...formValues, title: e.target.value })}}
+              required
+              value={formValues.title}
+              placeholder='Title...' 
+              onChange={(e) => {setFormValues({...formValues, title: e.target.value })}}
         />
       </label>
 
