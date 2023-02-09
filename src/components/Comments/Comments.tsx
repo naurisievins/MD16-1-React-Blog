@@ -22,7 +22,7 @@ function Comments(props: { id: string | undefined }) {
     })
   })
 
-  if (isLoading) return <h1>Loading...</h1>;
+  if (isLoading) return <h1>Loading comments...</h1>;
 
   if (!data) return <span>No one has commented yet.</span>;
   

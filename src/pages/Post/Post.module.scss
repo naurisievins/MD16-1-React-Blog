@@ -61,6 +61,15 @@
 .edit_button {
   margin-left: auto;
   padding: 0 50px;
-  background-color: rgba(206, 199, 199, 0.267);
+  background-color: rgba(206, 199, 199, 0);
   font-weight: 600;
+  border: 1px solid gray;
+}
+
+.edit_button:hover {
+  background-color: rgb(212, 209, 209);
+}
+
+.comment_section_title {
+  padding: 20px;
 }

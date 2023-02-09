@@ -10,8 +10,8 @@
   border-radius: 15px;
   margin: 0 auto;
   margin-top: 10px;
-  background-color: #bfbfbf;
   max-width: 600px;
+  border: 1px solid gray;
 }
 
 .row {
@@ -47,5 +47,6 @@
 }
 
 .button_row {
-  align-self: center;
+  align-self: end;
+  margin-right: 30px;
 }

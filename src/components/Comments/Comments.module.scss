@@ -6,6 +6,7 @@
 }
 
 .comment {
+  position: relative;
   width: 100%;
   display: flex;
   background-color: rgba(219, 222, 223, 0.425);
@@ -28,6 +29,9 @@
 }
 
 .date {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
   text-align: right;
   font-size: 0.8rem;
 }

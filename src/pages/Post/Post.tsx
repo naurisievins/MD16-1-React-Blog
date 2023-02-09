@@ -166,7 +166,7 @@ function Post() {
         }
       </div>
       <div>
-        <h2>Comment section</h2>
+        <h3 className={styles.comment_section_title}>Comment section</h3>
         <Comments id = { id } />
         {!showEdit && <AddComment addComment={(author, msg) => addComment(author, msg)} />}
       </div>
