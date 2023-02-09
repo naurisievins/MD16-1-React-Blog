@@ -112,7 +112,8 @@ function Post() {
   }
 
   const mutationWithPrevComments = useMutation({
-    mutationFn: ({msg, author}: AddComment) => axios.patch(url, {'comments':[...comment, {id: uuidv4(), comment: msg, author, date: dateFormat()}]}),
+    mutationFn: ({msg, author}: AddComment) => axios
+      .patch(url, {commentCount: comment.length +1, 'comments':[...comment, {id: uuidv4(), comment: msg, author, date: dateFormat()}]}),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['comments'] })
       queryClient.invalidateQueries({ queryKey: ['postData'] })
@@ -120,7 +121,8 @@ function Post() {
   })
 
   const mutationWithoutPrevComments = useMutation({
-    mutationFn: ({msg, author}: AddComment) => axios.patch(url, {'comments':[{id: uuidv4(), comment: msg, author, date: dateFormat()}]}),
+    mutationFn: ({msg, author}: AddComment) => axios
+      .patch(url, {commentCount: 1, 'comments':[{id: uuidv4(), comment: msg, author, date: dateFormat()}]}),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['comments'] })
       queryClient.invalidateQueries({ queryKey: ['postData'] })

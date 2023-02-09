@@ -4,4 +4,5 @@ export type Form = {
   image: string
   content: string
   date?: string
+  commentCount?: number
 }

@@ -4,6 +4,7 @@ import { Form } from '../../types/Form'
 import styles from './Blog.module.scss'
 import { NavLink } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
+import { getCommentCount } from '../../components/getCommentCount'
 
 function Blog() {
 
@@ -32,7 +33,12 @@ function Blog() {
           <img src={post.image} alt={post.title} />
             <div className={styles.text_content}>
               <span className={styles.title}>{post.title}</span>
-              <span className={styles.content}>{shortContent(post.content)}</span>
+              <span className={styles.content}>
+                {shortContent(post.content)}
+                <span className={styles.comment_count}>
+                  {` ( ${post.commentCount?post.commentCount:0} )`}
+                </span>
+              </span>
               <span className={styles.date}>{String(post.date)}</span>
               <span className={styles.link}><NavLink to={`/blog/${post.id}`}><u>Read more</u></NavLink></span>
             </div>
